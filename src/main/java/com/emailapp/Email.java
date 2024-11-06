@@ -16,16 +16,12 @@ public class Email {
     public Email(String firstname, String lastname) {
         this.firstname = firstname;
         this.lastname = lastname;
-        System.out.println("EMAIL CREATED " + this.firstname + "  " + this.lastname);
 
         this.department = setDepartment();
-        System.out.println("Department: " + this.department);
 
         this.password = randomPassword (defaultPasswordLength);
-        System.out.println("Your password is : " + this.password);
 
         email = firstname.toLowerCase() + " " + lastname.toLowerCase() + "@" + department + "." + companySuffix;
-        System.out.println("Email is : " + email);
     }
 
     private String setDepartment() {
